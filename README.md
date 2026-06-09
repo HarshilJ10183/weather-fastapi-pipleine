@@ -1,8 +1,11 @@
-#  Enterprise Weather Data Pipeline
+
+
+```markdown
+# Enterprise Weather Data Pipeline
 
 A lightweight, real-time data ingestion pipeline and RESTful API built with Python and FastAPI. This backend application fetches live meteorological data, processes it into a clean format, and stores it in a relational database for historical tracking.
 
-##  Features
+## Features
 * **Real-Time Data Ingestion:** Connects to external weather APIs to fetch live current conditions.
 * **Data Transformation:** Cleans and processes raw JSON payloads into structured, usable dictionaries.
 * **Persistent Storage:** Utilizes SQLite to automatically log and store historical weather queries.
@@ -18,5 +21,30 @@ A lightweight, real-time data ingestion pipeline and RESTful API built with Pyth
 
 1. **Clone the repository:**
    ```bash
-   git clone [https://github.com/YOUR_USERNAME/weather-fastapi-pipeline.git](https://github.com/YOUR_USERNAME/weather-fastapi-pipeline.git)
-   cd weather-fastapi-pipeline
+   git clone [https://github.com/HarshilJ10183/weather-fastapi-pipleine.git](https://github.com/HarshilJ10183/weather-fastapi-pipleine.git)
+   cd weather-fastapi-pipleine
+
+```
+
+2. **Install the required dependencies:**
+```bash
+pip install fastapi uvicorn
+
+```
+
+
+3. **Start the server:**
+```bash
+python3 -m uvicorn app:app --reload
+
+```
+
+
+4. **Test the Endpoints:**
+* Open your browser and go to `http://127.0.0.1:8000/weather?city=Oshawa` to run the pipeline.
+* Go to `http://127.0.0.1:8000/history` to view your saved SQL database logs.
+
+
+
+```
+
